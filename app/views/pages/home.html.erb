@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="background" style="background-image: url(<%= image_path "background_img.jpg" %>)">
+</div>
+
+
+<div class="container homepage-content">
+  <h1>Your programming solution, fast and simple</h1>
+  <%= link_to 'Discover', "/projects", html_options = {class: "btn btn-success btn-lg discover-btn"}%>
+</div>

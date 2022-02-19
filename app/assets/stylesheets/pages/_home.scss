@@ -1,1 +1,24 @@
 // Specific CSS for your home-page
+html, body{
+  position: relative;
+}
+
+.background{
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  filter: blur(3px);
+  position: absolute;
+  z-index: -100;
+}
+
+.homepage-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  font-weight: bold;
+}
