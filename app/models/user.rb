@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :project, dependent: :destroy
 
-  validates :username, presence: true
+  validates :username, presence: true, uniqueness: true, length: { minimum: 4, maximum: 15 }
   validates :city, presence: true
 end
