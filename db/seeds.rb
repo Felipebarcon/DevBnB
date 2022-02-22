@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 users = User.create([
    {email: "alex@email.com", encrypted_password: "password", username: "neiva", city: "Fribourg"},
     {email: "felipe@email.com", encrypted_password: "password", username: "felbar", city: "Carouge"},
@@ -17,3 +18,4 @@ projects = Project.create([
    {name: "Useful API", description: "I can create the API you need in just a few days", price: 600, duration: "5 days", user_id: 1},
    {name: "Relational database", description: "I can create any relational database you need, from simple to complex", price: 400, duration: "1 week", user_id: 1}
    ])
+
