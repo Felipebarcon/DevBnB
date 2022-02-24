@@ -1,0 +1,19 @@
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+h1:before {
+  content: "« ";
+}
+
+h1:after {
+  content: " »";
+}
+
+body {
+  background-color: #dee2e6;
+}
