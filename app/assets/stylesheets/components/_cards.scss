@@ -1,11 +1,14 @@
 .product-grid{
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .product-image{
     overflow: hidden;
     position: relative;
 }
+
 a.image {
   display: block; }
 
@@ -17,7 +20,7 @@ a.image {
 .product-grid:hover .product-image img {
   transform: scale(1.1); }
 
-.product-grid .product-links{
+.product-links{
     background: #fff;
     width: 150px;
     padding: 10px 20px;
