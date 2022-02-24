@@ -1,32 +1,33 @@
-<h1>Projects page</h1>
-
-<div class="row">
-<% @projects.each do |project|  %>
-    <div class="col-md-3 col-sm-6">
-        <div class="product-grid">
-            <div class="product-image">
-                <a href="#" class="image">
-                    <img class="img-1" src="<%= cl_image_path project.photo.key, height: 300, crop: :fill %>">
-                </a>
-                <ul class="product-links">
-                    <li><%= link_to ('<i class="fa fa-eye"></i>').html_safe, '#' %></li>
-                    <li><%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, '#' %></li>
-                    <li><%= link_to ('<i class="fa fa-heart">').html_safe, '#' %></i></li>
-                </ul>
-            </div>
-            <div class="product-content">
-                <h3 class="title"><%= link_to project.name, '#' %></h3>
-                <h3 class="description"><%= project.description %></h3>
-                <div class="price"><%= project.price %><strong> $ </strong></div>
-                <ul class="rating">
-                    <li class="fas fa-star"></li>
-                    <li class="fas fa-star"></li>
-                    <li class="fas fa-star"></li>
-                    <li class="fas fa-star"></li>
-                    <li class="far fa-star"></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <% end %>
+<div class="container">
+  <div class="row">
+  <h1>Projects page</h1>
+  <% @projects.each do |project|  %>
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="img-1" src="<%= cl_image_path project.photo.key, height: 300, crop: :fill %>">
+                  </a>
+                  <ul class="product-links">
+                      <li><%= link_to ('<i class="fa fa-eye"></i>').html_safe, project_path(project) %></li>
+                      <li><%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, '#' %></li>
+                      <li><%= link_to ('<i class="fa fa-heart">').html_safe, '#' %></i></li>
+                  </ul>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><%= link_to project.name, '#' %></h3>
+                  <h3 class="description"><%= project.description %></h3>
+                  <div class="price"><%= project.price %><strong> $ </strong></div>
+                  <ul class="rating">
+                      <li class="fas fa-star"></li>
+                      <li class="fas fa-star"></li>
+                      <li class="fas fa-star"></li>
+                      <li class="fas fa-star"></li>
+                      <li class="far fa-star"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <% end %>
+  </div>
 </div>
