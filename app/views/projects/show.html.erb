@@ -3,11 +3,11 @@
     <div class="col-md-6 project-desc">
       <div class="project-desc-pres">
         <h1><%= @project.name.capitalize %></h1>
-        <p><%= @project.description.capitalize %></p>
+        <p><%=  %></p>
       </div>
       <div class="project-desc-data">
-        <h3>Price : </h3><p><%= @project.price %></p>
-        <h3>Duration : </h3><p><%= @project.duration %></p>
+        <h4>Price : </h4><p><%= @project.price %></p>
+        <h4>Duration : </h4><p>about <%= @project.duration %></p>
       </div>
     </div>
 
@@ -16,7 +16,13 @@
         <%= cl_image_tag @project.photo.key, crop: :fill %>
       </div>
       <div class="project-aside-btns">
-
+        <div class="project-dev">
+          <h4>Developer : <strong><%= @project.user.username %></strong></h4>
+          <span class="developer-city"><%= image_tag "icons/pin.png" %><%= @project.user.city %></span>
+        </div>
+        <a href ="#" class="book-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
       </div>
     </div>
   </div>
