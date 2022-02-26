@@ -49,6 +49,7 @@
 
   .book-btn{
     border-radius: 5px;
+    color: #880c4a;
     padding: 1rem;
     width: 75px;
     height: 75px;
@@ -61,6 +62,7 @@
       font-size: 2rem;
       transition: text-shadow 0.1s;
       &:hover{
+        color: #788090 ;
         text-shadow: 4px 4px 5px rgba(0,0,0,0.2);
       }
     }
