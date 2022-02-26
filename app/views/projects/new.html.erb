@@ -5,27 +5,23 @@
   <%= f.error_notification %>
   <div class="form-inputs">
     <p>
-      <%= f.label :name %><br>
-      <%= f.text_field :name %>
+      <%= f.input :name %>
     </p>
 
     <p>
-      <%= f.label :description %><br>
-      <%= f.text_field :description %>
+      <%= f.input :description %>
     </p>
 
     <p>
-      <%= f.label :price %><br>
-      <%= f.text_field :price %>
+      <%= f.input :price %>
     </p>
 
     <p>
-      <%= f.label :duration %><br>
-      <%= f.text_field :duration %>
+      <%= f.input :duration %>
     </p>
 
     <p>
-      <%= f.input :photo, as: :file %><br>
+      <%= f.input :photo, as: :file %>
     </p>
   </div>
     <%= f.submit class: "btn btn-gradient"%>

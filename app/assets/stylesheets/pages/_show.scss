@@ -1,0 +1,19 @@
+.center {
+  text-align: center;
+  background-color: linear-gradient(grey,lightgrey, darkgrey);
+}
+
+.mx-auto {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-color: rgba(0, 0, 0, 0.836);
+  border-radius: 5px;
+  box-shadow: 2px;
+  font-weight: 700;
+}
+
+
+.mx-auto h2 {
+  padding-top: 25px;
+  margin-top: 25px;
+}
