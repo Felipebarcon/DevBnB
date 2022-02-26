@@ -23,6 +23,6 @@ class ProjectsController < ApplicationController
   private
 
   def projects_params
-    params.require(:project).permit(:name, :description, :price, :duration, :photo)
+    params.require(:project).permit(:name, :description, :price, :duration, :photo, :details)
   end
 end
