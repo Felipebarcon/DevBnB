@@ -11,11 +11,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
+
+          <li class="nav-item">
+            <%= link_to "Home Page", root_path, class: "nav-link" %>
+          </li>
+
           <li class="nav-item active">
             <%= link_to "Projects", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Create a project", "#", class: "nav-link" %>
+            <%= link_to "Create a project", new_project_path, class: "nav-link" %>
           </li>
 
           <li class="nav-item dropdown">
