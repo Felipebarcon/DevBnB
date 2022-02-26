@@ -1,0 +1,22 @@
+<div class="center">
+    <div class="mx-auto" style="width: 350px;">
+    <h2><%= @project.name %></h2>
+    </div>
+
+    <div class="mx-auto border border-dark" style="width: 350px;">
+    <h3><%= @project.price%>$</h3>
+    </div>
+
+    <div class="mx-auto border border-dark" style="width: 350px;">
+    <h3><%= @project.duration %></h3>
+    </div>
+
+    <div class="mx-auto border border-dark bg-warning text-dark" style="width: 350px;">
+      <div class="warning-color"><%= @project.description %></div>
+    </div>
+
+    <div class="mx-auto border border-dark" style="width: 350px;">
+      <%= link_to "Show projects", projects_path %>
+    </div>
+
+</div>
