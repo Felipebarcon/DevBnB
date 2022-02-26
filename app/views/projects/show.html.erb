@@ -1,22 +1,24 @@
-<div class="center">
-    <div class="mx-auto" style="width: 350px;">
-    <h2><%= @project.name %></h2>
+<div class="container">
+  <div class="show-content row">
+    <div class="col-md-6 project-desc">
+      <div class="project-desc-pres">
+        <h1><%= @project.name.capitalize %></h1>
+        <p><%= @project.description.capitalize %></p>
+      </div>
+      <div class="project-desc-data">
+        <h3>Price : </h3><p><%= @project.price %></p>
+        <h3>Duration : </h3><p><%= @project.duration %></p>
+      </div>
     </div>
 
-    <div class="mx-auto border border-dark" style="width: 350px;">
-    <h3><%= @project.price%>$</h3>
-    </div>
+    <div class="col-md-6 project-aside">
+      <div class="project-img">
+        <%= cl_image_tag @project.photo.key, crop: :fill %>
+      </div>
+      <div class="project-aside-btns">
 
-    <div class="mx-auto border border-dark" style="width: 350px;">
-    <h3><%= @project.duration %></h3>
+      </div>
     </div>
-
-    <div class="mx-auto border border-dark bg-warning text-dark" style="width: 350px;">
-      <div class="warning-color"><%= @project.description %></div>
-    </div>
-
-    <div class="mx-auto border border-dark" style="width: 350px;">
-      <%= link_to "Show projects", projects_path %>
-    </div>
+  </div>
 
 </div>
