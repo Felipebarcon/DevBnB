@@ -13,10 +13,12 @@
         <li class="nav-item">
           <%= link_to "Home Page", root_path, class: "nav-link" %>
         </li>
+        <li>
+          <%= link_to "Projects", projects_path, class: "nav-link" %>
+        </li>
 
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Projects", projects_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Create a project", new_project_path, class: "nav-link" %>
