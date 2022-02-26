@@ -4,25 +4,13 @@
   <%= simple_form_for @project do |f| %>
   <%= f.error_notification %>
   <div class="form-inputs">
-    <p>
+
       <%= f.input :name %>
-    </p>
-
-    <p>
       <%= f.input :description %>
-    </p>
-
-    <p>
       <%= f.input :price %>
-    </p>
-
-    <p>
       <%= f.input :duration %>
-    </p>
-
-    <p>
+      <%= f.input :details %>
       <%= f.input :photo, as: :file %>
-    </p>
   </div>
     <%= f.submit class: "btn btn-gradient"%>
   <% end %>
