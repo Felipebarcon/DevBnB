@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
 Project.destroy_all
+User.destroy_all
+
 file = URI.open('https://source.unsplash.com/random/?coding')
 
 users = User.create([
