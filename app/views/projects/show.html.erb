@@ -20,9 +20,15 @@
           <h4>Developer : <strong><%= @project.user.username %></strong></h4>
           <span class="developer-city"><%= image_tag "icons/pin.png" %><%= @project.user.city %></span>
         </div>
+
         <a href ="#" class="book-btn">
           <i class="fas fa-shopping-cart"></i>
         </a>
+      </div>
+      <div id="map"
+        style="width: 100%; height: 600px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
     </div>
   </div>

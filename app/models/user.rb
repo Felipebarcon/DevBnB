@@ -7,4 +7,6 @@ class User < ApplicationRecord
 
   validates :username, presence: true, uniqueness: true, length: { minimum: 4, maximum: 15 }
   validates :city, presence: true
+  geocoded_by :city
+  after_validation :geocode, if: :will_save_change_to_city?
 end
