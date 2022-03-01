@@ -7,8 +7,12 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
-
+    @marker = [{
+      lat: @project.user.latitude,
+      lng: @project.user.longitude
+    }]
   end
+
 
   def new
     @project = Project.new

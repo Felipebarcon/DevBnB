@@ -12,9 +12,9 @@ User.destroy_all
 file = URI.open('https://source.unsplash.com/random/?coding')
 
 users = User.create([
-    {email: "alex@email.com", password: "password", username: "neiva", city: "Fribourg"},
-    {email: "felipe@email.com", password: "password", username: "felipe", city: "Carouge"},
-    {email: "stephane@email.com", password: "password", username: "misochan", city: "Lausanne"}])
+    {email: "alex@email.com", password: "password", username: "neiva", city: "Rue Louis-d'Affry, Fribourg"},
+    {email: "felipe@email.com", password: "password", username: "felipe", city: "Quai du Cheval-Blanc, Carouge"},
+    {email: "stephane@email.com", password: "password", username: "misochan", city: "Rue de Genève, Lausanne"}])
 
 project1 = Project.new(name: "Landing page", description: "Simple landing page for your website", price: 150, duration: "3 days", user_id: User.first.id, details: "
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et orci at velit vestibulum tempor eu a augue. Phasellus vitae bibendum risus. Donec dignissim ante sit amet ligula lacinia feugiat. Quisque id velit non orci fermentum vulputate. Phasellus laoreet elementum erat, eu ultrices lectus. Vestibulum commodo non ipsum at pulvinar. Cras eget auctor tellus, ut accumsan diam. Ut justo urna, accumsan a diam iaculis, laoreet dignissim diam. Proin accumsan, massa eget tempor congue, quam est auctor enim, eget gravida tellus enim vel magna. Vivamus eget nunc id turpis tempus eleifend. Maecenas pellentesque lacinia sollicitudin. Pellentesque sit amet luctus justo. Vivamus mattis tellus magna, cursus dignissim metus venenatis viverra. Mauris ut laoreet felis, et lacinia arcu. Etiam rhoncus congue porttitor.")
