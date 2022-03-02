@@ -12,11 +12,11 @@
             <h4>Developer : <strong><%= @project.user.username %></strong></h4>
             <p class="developer-city"><i class="fas fa-map-marker-alt"></i><%= @project.user.city %></p>
             <p><i class="fas fa-receipt"></i><%= @project.price %> $</p>
-            <p><i class="far fa-clock"></i><%= @project.duration %></p>
+            <p><i class="far fa-star"></i><%= @project.duration %></p>
           </div>
 
           <a href ="#" class="book-btn">
-            <%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, new_project_order_path %>
+            <%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, new_project_path(@order)%>
           </a>
         </div>
       </div>
@@ -35,5 +35,4 @@
       </div>
     </div>
   </div>
-
 </div>

@@ -3,11 +3,12 @@
     <div class="col-4 offset-4">
       <h1>Book a project</h1>
 
-      <%= simple_form_for @order do |f| %>
+      <%= simple_form_for [@project, @order] do |f| %>
       <%= f.error_notification %>
       <div class="form-inputs">
-
           <%= f.input :status %>
+          <%= f.input :comment %>
+          <%= f.input :starts_at %>
       </div>
         <%= f.submit class: "btn btn-gradient"%>
       <% end %>

@@ -1,15 +1,20 @@
 class OrdersController < ApplicationController
 
   def new
-    @orders = Order.new
+    @project = Project.find(params[:project_id])
+    @order = Order.new
   end
 
   def create
     @order = Order.new(order_params)
+    @project = Project.find(params[:project_id])
+    @order.project = @project
     @order.user = current_user
-    @order.project = current_project
-    @order.save
-    redirect_to projects_path
+    if @order.save
+      redirect_to projects_path
+    else
+      render :new
+    end
   end
 
   def update
@@ -19,6 +24,6 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:status)
+    params.require(:order).permit(:status, :project_id, :user_id)
   end
 end
