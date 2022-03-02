@@ -1,5 +1,7 @@
 class Project < ApplicationRecord
   belongs_to :user
+  has_many :orders, dependent: :destroy
+
   has_one_attached :photo
 
   validates :name, presence: true, length: { minimum: 6, maximum: 100 }

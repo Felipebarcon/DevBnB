@@ -1,8 +1,24 @@
-<div class="background" style="background-image: url(<%= image_path "background_img.jpg" %>)">
-</div>
-
-
-<div class="container homepage-content">
-  <h1>Your programming solution, fast and simple</h1>
-  <%= link_to 'Discover', projects_path, html_options = {class: "btn btn-success btn-lg discover-btn"}%>
+<div class="animation">
+  <div class="perspective-text">
+    <div class="perspective-line">
+      <%= link_to ('<p class="home-perspective"></p>').html_safe, projects_path %>
+      <%= link_to ('<p class="home-perspective">The new way</p>').html_safe, projects_path %>
+    </div>
+    <div class="perspective-line">
+      <%= link_to ('<p class="home-perspective">The new way</p>').html_safe, projects_path %>
+      <%= link_to ('<p class="home-perspective">to work</p>').html_safe, projects_path %>
+    </div>
+    <div class="perspective-line">
+      <%= link_to ('<p class="home-perspective">to work</p>').html_safe, projects_path %>
+      <%= link_to ('<p class="home-perspective">with</p>').html_safe, projects_path %>
+    </div>
+    <div class="perspective-line">
+      <%= link_to ('<p class="home-perspective">with</p>').html_safe, projects_path %>
+      <%= link_to ('<p class="home-perspective">developers</p>').html_safe, projects_path %>
+    </div>
+    <div class="perspective-line">
+      <%= link_to ('<p class="home-perspective">developers</p>').html_safe, projects_path %>>
+      <p></p>
+    </div>
+  </div>
 </div>
