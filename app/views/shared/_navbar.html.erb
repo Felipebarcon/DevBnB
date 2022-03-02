@@ -4,7 +4,6 @@
       <%= image_tag "logo2.png" %>
     <% end %>
     <div class="deconstructed">
-      DECONSTRUCTED
       <div><span>CodeBnB</span></div>
       <div><span>CodeBnB</span></div>
       <div><span>CodeBnB</span></div>
@@ -17,7 +16,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <%= form_with url: "/projects", method: :get do |form| %>
-          <%= form.label :query, "Search for:" %>
           <%= form.text_field :query %>
           <%= form.submit "Search" %>
         <% end %>
