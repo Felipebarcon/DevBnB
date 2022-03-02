@@ -24,25 +24,28 @@
   margin-left: 5rem;
   height: 1em;
   color: transparent;
-  font-family: 'Cambay', sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.1em;
   line-height: 1.03em;
 }
 
 .deconstructed > div {
   position: absolute;
+
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  color: black;
+  color: #8d8d8e;
   pointer-events: none;
+    span {
+      font-family: 'Monoton', cursive;
+    }
 }
 
 .deconstructed > div:nth-child(1) {
-  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  -webkit-mask-image: linear-gradient(black 25%, transparent 2%);
   mask-image: linear-gradient(black 25%, transparent 25%);
   animation: deconstructed1 5s infinite;
 }
