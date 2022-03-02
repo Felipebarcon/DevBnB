@@ -17,15 +17,22 @@
   width: 40px;
 }
 
-#home-title {
-	font-size: 2.3rem;
-	text-align: left;
-	color: #fcedd8;
-	font-family: 'Niconne', cursive;
-	font-weight: 700;
-  text-shadow:  1.2px 1.2px 0px #eb452b,
-                2.4px 2.4px 0px #efa032,
-                3.6px 3.6px 0px #46b59b,
-                4.8px 4.8px 0px #017e7f,
-                6px 6px 0px #052939,
+#nav-title {
+  position: relative;
+  z-index: 2;
+  font-size: 10em;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  text-shadow: 1px 1px hsl(50, 50%, 45%),
+               2px 2px hsl(50, 50%, 40%),
+               3px 3px hsl(50, 50%, 35%),
+               4px 4px hsl(50, 50%, 34%),
+               5px 5px hsl(50, 50%, 33%),
+               6px 6px hsl(50, 50%, 32%),
+               7px 7px hsl(50, 50%, 31%),
+               8px 8px hsl(50, 50%, 30%),
+               9px 9px hsl(50, 50%, 29%),
+               10px 10px hsl(50, 50%, 28%),
+               10px 10px 30px rgba(0,0,0,.7),
 }
