@@ -2,7 +2,17 @@ class ProjectsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @projects = Project.all
+    if params[:commit]
+      @projects = Project.where("name LIKE '%#{params[:query]}%'")
+      if @projects == []
+        @page_h1 = "No project found for #{params[:query]}."
+      else
+        @page_h1 = "Here's your search for #{params[:query]}."
+      end
+    else
+      @projects = Project.all
+      @page_h1 =  'Projects<i class="fas fa-stream"></i>'
+    end
   end
 
   def show
