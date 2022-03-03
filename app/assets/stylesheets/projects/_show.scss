@@ -5,15 +5,13 @@ body {
 
 .show-content{
   border-radius: 6px;
-  background-color: white;
-  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
   padding: 1.5rem;
 }
 
-.project-aside{
-  .project-img img{
+.project-desc-pres {
+  margin-right: 7rem;
+    .project-img img{
     width: 100%;
-    height: auto;
     border-radius: 7px;
     box-shadow: 0 0 4px #f0f0f0;
   }
@@ -49,20 +47,10 @@ body {
 
 
 .project-aside{
-  .project-img img{
-    width: 100%;
-    height: auto;
-    border-radius: 7px;
-    box-shadow: 0 0 4px #f0f0f0;
-  }
-
   #map {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     border-radius: 7px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    width: 100%;
-    height: auto;
-    position: sticky;
   }
 }
 
@@ -77,4 +65,4 @@ h1 {
     justify-content: right;
     font-weight: bold;
     text-decoration: none;
-    }
+}

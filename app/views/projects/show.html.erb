@@ -1,9 +1,14 @@
-<div class="container col-md-8 offset-2 mt-3" >
+<div class="container mt-3" >
   <div class="show-content row">
-    <div class="col-md-6 project-desc">
+    <div class="col-md-6 project-desc ">
       <div class="project-desc-pres">
-        <h1><%= @project.name.capitalize %></h1>
-        <p><%=  @project.details %></p>
+        <h1 class="animate__animated animate__backInUp"><%= @project.name.capitalize %></h1>
+        <div class="project-img">
+          <%= cl_image_tag @project.photo.key, crop: :fill %>
+        </div>
+        <div class="project-details mt-5">
+          <p style="text-align: justify;"><%=  @project.details %></p>
+        </div>
       </div>
 
       <div class="project-dev-data">
@@ -16,20 +21,15 @@
           </div>
 
           <a href ="#" class="book-btn">
-            <%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, new_project_path(@order)%>
+            <%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, new_project_order_path(@project)%>
           </a>
         </div>
       </div>
-
     </div>
 
     <div class="col-md-6 project-aside">
-      <div class="project-img">
-        <%= cl_image_tag @project.photo.key, crop: :fill %>
-      </div>
-
       <div id="map"
-          style="width: 100%; height: 500px;"
+          style="width: 100%; height: 600px;"
           data-markers="<%= @marker.to_json %>"
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>

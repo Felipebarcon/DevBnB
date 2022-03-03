@@ -21,6 +21,7 @@ ActiveStorage.start()
 // External imports
 import "bootstrap";
 import 'mapbox-gl/dist/mapbox-gl.css';
+import 'animate.css';
 
 
 // Internal imports, e.g:

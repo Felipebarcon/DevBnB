@@ -4,10 +4,10 @@
       <%= image_tag "logo2.png" %>
     <% end %>
     <div class="deconstructed">
-      <div><span>CodeBnB</span></div>
-      <div><span>CodeBnB</span></div>
-      <div><span>CodeBnB</span></div>
-      <div><span>CodeBnB</span></div>
+      <div><span>devbnb</span></div>
+      <div><span>devbnb</span></div>
+      <div><span>devbnb</span></div>
+      <div><span>devbnb</span></div>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
             <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "My projects", "#", class: "dropdown-item" %>
-              <%= link_to "My orders", "#", class: "dropdown-item" %>
+              <%= link_to "My orders", my_orders_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>

@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
       end
     else
       @projects = Project.all
-      @page_h1 =  'Projects<i class="fas fa-stream"></i>'
+      @page_h1 =  'Projects'
     end
   end
 
