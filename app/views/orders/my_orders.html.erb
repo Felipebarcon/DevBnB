@@ -1,0 +1,25 @@
+<div class="container-cards col-md-8 offset-2">
+  <div class="row">
+  <h1 class="animate__animated animate__backInRight">My orders</h1>
+
+  <% @orders.each do |order|  %>
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid animate__animated animate__zoomIn">
+              <div class="product-image">
+              <% if order.project.photo.attached? %>
+                <a href="#" class="image">
+                      <img class="img-1" src="<%= cl_image_path order.project.photo.key, height: 300, crop: :fill %>">
+                  </a>
+                  <% end %>
+              </div>
+              <div class="product-content">
+                  <h3><%= link_to order.project.name, order_path(order) %></h3>
+                  <h3 class="status"><%= order.status %></h3>
+                  <h3 class="comment"><%= order.comment %></h3>
+                  <div class="date"><%= order.starts_at %></div>
+              </div>
+          </div>
+      </div>
+      <% end %>
+  </div>
+</div>

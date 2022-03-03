@@ -1,8 +1,17 @@
 class OrdersController < ApplicationController
+  skip_before_action :authenticate_user!
 
   def new
     @project = Project.find(params[:project_id])
     @order = Order.new
+  end
+
+  def my_orders
+    @orders = Order.all
+  end
+
+  def show
+    @order = Order.find(params[:id])
   end
 
   def create
@@ -24,6 +33,6 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:status, :project_id, :user_id)
+    params.require(:order).permit(:status, :comment, :starts_at, :user_id, :project_id)
   end
 end
