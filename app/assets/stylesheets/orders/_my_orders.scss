@@ -1,0 +1,20 @@
+.my-orders-card{
+
+  .card-content{
+    height: 100%;
+  }
+  min-height: 300px;
+  margin: 1rem;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  .img-section{
+
+    display: flex;
+    align-items: center;
+    .img-1{
+    width: 100%;
+    height: auto;
+  }
+  }
+
+}
