@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 
   resources :orders, only: :show
 
-  get "orders", to: "orders#my_orders"
+  get "/my_orders", to: "orders#my_orders"
 
 end

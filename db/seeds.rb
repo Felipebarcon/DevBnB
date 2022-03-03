@@ -65,6 +65,3 @@ project10 = Project.new(name: "Navbar design", description: "I can design a grea
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et orci at velit vestibulum tempor eu a augue. Phasellus vitae bibendum risus. Donec dignissim ante sit amet ligula lacinia feugiat. Quisque id velit non orci fermentum vulputate. Phasellus laoreet elementum erat, eu ultrices lectus. Vestibulum commodo non ipsum at pulvinar. Cras eget auctor tellus, ut accumsan diam. Ut justo urna, accumsan a diam iaculis, laoreet dignissim diam. Proin accumsan, massa eget tempor congue, quam est auctor enim, eget gravida tellus enim vel magna. Vivamus eget nunc id turpis tempus eleifend. Maecenas pellentesque lacinia sollicitudin. Pellentesque sit amet luctus justo. Vivamus mattis tellus magna, cursus dignissim metus venenatis viverra. Mauris ut laoreet felis, et lacinia arcu. Etiam rhoncus congue porttitor.")
 project10.photo.attach(io: File.open(Rails.root.join('app/assets/images/project10.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
 project10.save
-
-order1 = Order.new(status: "Accepted", user_id: User.first.id, project_id: Project.first.id)
-order1.save
