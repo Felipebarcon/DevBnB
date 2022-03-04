@@ -1,0 +1,23 @@
+.container-my-order {
+  justify-content: space-between;
+}
+
+.my-order-content {
+
+  img {
+    width: 95%;
+    border-radius: 7px;
+    box-shadow: 0 0 4px #f0f0f0;
+    margin-left: 0.9rem;
+  }
+
+}
+
+.my-order-data {
+  border-radius: 5px;
+  max-width: 50vh;
+}
+
+.order-details-title {
+  margin-left: 0.5rem;
+}

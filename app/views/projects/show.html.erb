@@ -3,27 +3,25 @@
     <div class="col-md-6 project-desc ">
       <div class="project-desc-pres">
         <h1 class="animate__animated animate__backInUp"><%= @project.name.capitalize %></h1>
+
         <div class="project-img">
           <%= cl_image_tag @project.photo.key, crop: :fill %>
         </div>
+
+        <div class="project-dev-data">
+          <h4>Developer : <strong><%= @project.user.username %></strong></h4>
+          <p class="developer-city"><i class="fas fa-map-marker-alt"></i><%= @project.user.city %></p>
+          <p><i class="fas fa-receipt"></i><%= @project.price %> $</p>
+          <p><i class="far fa-star"></i><%= @project.duration %></p>
+
+          <%= link_to 'Book this project', new_project_order_path(@project), class: "btn btn-success" %>
+
+      </div>
+
         <div class="project-details mt-5">
           <p style="text-align: justify;"><%=  @project.details %></p>
         </div>
-      </div>
-
-      <div class="project-dev-data">
-        <div class="project-aside-btns">
-          <div class="project-dev">
-            <h4>Developer : <strong><%= @project.user.username %></strong></h4>
-            <p class="developer-city"><i class="fas fa-map-marker-alt"></i><%= @project.user.city %></p>
-            <p><i class="fas fa-receipt"></i><%= @project.price %> $</p>
-            <p><i class="far fa-star"></i><%= @project.duration %></p>
-          </div>
-
-          <a href ="#" class="book-btn">
-            <%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, new_project_order_path(@project)%>
-          </a>
-        </div>
+        <p class="mt-5"><%= link_to "Back to Projects", projects_path, class: "btn btn-info" %></p>
       </div>
     </div>
 

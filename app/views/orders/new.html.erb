@@ -1,12 +1,10 @@
 <div class="container col-md-8 offset-2 mt-3">
-  <h1>Book a project</h1>
+  <h1 class="animate__animated animate__backInRight">Book a project</h1>
   <div class="row">
     <div class="col-md 6">
       <div class="order-img">
         <%= cl_image_tag @project.photo.key%>
-        <p><%=  @project.details %></p>
-        <p><i class="fas fa-receipt mr-3"></i><%= @project.price %> $</p>
-        <p><i class="far fa-star"></i><%= @project.duration %></p>
+        <p class="mt-5"><%=  @project.details %></p>
       </div>
     </div>
 
@@ -18,7 +16,12 @@
           <%= f.input :comment %>
           <%= f.input :starts_at %>
       </div>
-        <%= f.submit class: "btn btn-gradient mt-3"%>
+        <%= f.submit class: "btn btn-success mt-3"%>
       <% end %>
+      <div class="icons mt-3">
+        <p>Price: <span><%= @project.price %> $</span></p>
+        <p>Duration: <span class="duration"><%= @project.duration %></span></p>
+      </div>
+      <p class="mt-5"><%= link_to "Back to projects", projects_path, class: "btn btn-info" %></p>
     </div>
 </div>

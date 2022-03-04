@@ -19,6 +19,7 @@
 
 .deconstructed {
   position: absolute;
+  width: 300px;
   margin-left: 5rem;
   height: 1em;
   color: transparent;
@@ -35,10 +36,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  color: #8d8d8e;
+  color: #44444b;
   pointer-events: none;
     span {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Bungee Shade', cursive;
     }
 }
 
@@ -89,7 +90,7 @@
     transform: translateX(0.5%);
   }
   82% {
-    transform: translateX(-0.2%);
+    transform: translateX(-0.1%);
   }
   100% {
     transform: translateX(-125%);
