@@ -1,18 +1,38 @@
-<div class="d-flex align-items-center justify-content-center">
-          <div class="product-grid animate__animated animate__zoomIn">
-              <div class="product-image">
-              <% if @order.project.photo.attached? %>
-                <a href="#" class="image">
-                  <img class="img-1" src="<%= cl_image_path @order.project.photo.key, height: 300, crop: :fill %>">
-                </a>
-              <% end %>
-              </div>
-              <div class="product-content">
-                  <h3 class="project-name"><%= @order.project.name %></h3>
-                  <p style="text-align: justify;"><%= @order.project.details %></p>
-                  <h3 class="status"><%= @order.status %></h3>
-                  <h3 class="comment"><%= @order.comment %></h3>
-                  <div class="date"><%= @order.starts_at %></div>
-              </div>
+
+<div class="container-my-order col-md-8 offset-2 mt-5">
+
+  <div class="row">
+  <h1 class="order-details-title animate__animated animate__backInRight">Order details</h1>
+
+    <div class="my-order-content col-md-6">
+        <div class="my-order-grid animate__animated animate__zoomIn">
+            <div class="my-order-image">
+            <% if @order.project.photo.attached? %>
+              <a href="#" class="image">
+                <img class="img-1" src="<%= cl_image_path @order.project.photo.key, height: 300, crop: :fill %>">
+              </a>
+            <% end %>
+            </div>
+
+            <div class="product-content">
+                <h3 class="project-name"><%= @order.project.name %></h3>
+                <p style="text-align: justify;"><%= @order.project.details %></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-order-data col-md-6">
+      <div class="my-order-data card text-dark bg-light mb-3 animate__animated animate__zoomIn">
+        <div class="card-header"><h3><strong>Order info</strong></h3></div>
+          <div class="card-body">
+            <p class="status"><strong>Order Status: </strong><%= @order.status %></p>
+            <p class="comment"><strong>Your comment: </strong><%= @order.comment %></p>
+            <p class="date"><strong>Order Start Date: </strong><%= @order.starts_at %></p>
           </div>
+          <%= link_to "Back to my Orders", my_orders_path, class: "btn btn-info" %>
       </div>
+
+    </div>
+
+  </div>
+</div>

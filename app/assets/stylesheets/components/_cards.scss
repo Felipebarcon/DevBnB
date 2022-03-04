@@ -3,13 +3,16 @@
     text-align: center;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     border-radius: 5px;
-    background-color: #e9ecef;
+    background-color: rgb(255, 255, 255);
     margin: 1rem;
+    height: 42vh;
 }
 
 .product-image{
     overflow: hidden;
     position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 a.image {
@@ -34,7 +37,7 @@ a.image {
     opacity: 0;
     transform: translateX(-50%) translateY(-150%);
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transition: all .75s ease;
 }
@@ -47,7 +50,8 @@ a.image {
 .product-links li{
     width: 48%;
     margin: 10px 0;
-    display: inline-block;
+    margin-right: 13px;
+    display: inline;
 }
 .product-links li a{
     color: #788090;
