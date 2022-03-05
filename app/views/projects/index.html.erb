@@ -15,20 +15,12 @@
                   <ul class="product-links">
                       <li><%= link_to ('<i class="fa fa-eye"></i>').html_safe, project_path(project) %></li>
                       <li><%= link_to ('<i class="fas fa-shopping-cart"></i>').html_safe, new_project_order_path(project) %></li>
-                      <li><%= link_to ('<i class="fas fa-star"></i>').html_safe, '#' %></i></li>
                   </ul>
               </div>
               <div class="product-content">
-                  <h3 class="title"><%= link_to project.name, project_path(project) %></h3>
+                  <h3 class="title"><%= project.name %></h3>
                   <h3 class="description"><%= project.description %></h3>
-                  <div class="price"><%= project.price %><strong> $ </strong></div>
-                  <ul class="rating">
-                      <li class="fas fa-star"></li>
-                      <li class="fas fa-star"></li>
-                      <li class="fas fa-star"></li>
-                      <li class="fas fa-star"></li>
-                      <li class="far fa-star"></li>
-                  </ul>
+                  <div class="price"><i class="fas fa-receipt"></i><%= project.price %><strong> $ </strong></div>
               </div>
           </div>
       </div>
