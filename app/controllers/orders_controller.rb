@@ -26,8 +26,16 @@ class OrdersController < ApplicationController
     end
   end
 
-  def update
+  def edit
+    @order = Order.find(params[:id])
+    @project = @order.project
+  end
 
+  def update
+    @order = Order.find(params[:id])
+    @project = @order.project
+    @order.update(order_params)
+    redirect_to my_orders_path(@order)
   end
 
   private
