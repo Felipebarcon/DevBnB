@@ -10,8 +10,6 @@
 Project.destroy_all
 User.destroy_all
 
-
-
 users = User.create([
     {email: "alex@email.com", password: "password", username: "neiva", city: "Rue Louis-d'Affry, Fribourg"},
     {email: "stephane@email.com", password: "password", username: "misochan", city: "Rue de Genève, Lausanne"},
@@ -67,3 +65,57 @@ project10 = Project.new(name: "Navbar design", description: "I can design a grea
 Hello sir! If you are looking for someone to create responsive, well-aligned, attractive-looking navbars, then I would love to help you! I am an expert in creating responsive websites from Figma design and have worked on many different projects by taking a design from Figma templates. I have great knowledge about all concepts of HTML, CSS and React. I can ensure that I will easily create an appealing, responsive navbar as per your satisfaction.")
 project10.photo.attach(io: File.open(Rails.root.join('app/assets/images/project10.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
 project10.save
+
+project11 = Project.new(name: "Figma Design", description: "I will design creative prototype wire in figma", price: 350, duration: "4 days", user_id: User.all.sample.id, details: "
+Hi, Welcome to my page. I have a Bachelors's degree in Interaction Design and am an award-winning designer working in the UI UX design area for the last 4+ years. Despite all the unbelievable growth, what has stayed me consistent through such an extremely long time, is my commitment to customer satisfaction.")
+project11.photo.attach(io: File.open(Rails.root.join('app/assets/images/project11.jpg')), filename: 'project11.jpg', content_type: 'image/jpg')
+project11.save
+
+project12 = Project.new(name: "App performance testing", description: "I will test performance, load and stress of your web application", price: 400, duration: "2 days", user_id: User.all.sample.id, details: "Performance testing is a testing measure that evaluates the speed, responsiveness and stability of a computer, network, software program or device under a workload. In today's time application success is about to handle massive users load and how application perform in that specific user load. I will run performance tests in order to identify performance-related bottlenecks. The goal of Load Testing is to improve performance bottlenecks and to ensure stability and smooth functioning of software application before deployment. Stress testing a type of software testing that verifies stability & reliability of software application. The goal of Stress testing is measuring software on its robustness and error handling capabilities under extremely heavy load conditions and ensuring that software doesn't crash under crunch situations.")
+project12.photo.attach(io: File.open(Rails.root.join('app/assets/images/project12.jpg')), filename: 'project12.jpg', content_type: 'image/jpg')
+project12.save
+
+project13 = Project.new(name: "Web calculator", description: "I will make online web calculator or convert excel into web", price: 1300, duration: "5 days", user_id: User.all.sample.id, details: "
+Hi, If you are looking for a Web Developer who can create a Web Calculator for your website then you never need to go anywhere, you'll get that right here. I can make Any Type of Web Calculator (Custom or Pre-defined) for any industry. The calculator will be Compatible With Your Website, which will be Cross-Browser Compatible, and also be Responsive. The calculations will be Very Accurate same as on your logic file. I only need a well-described calculation logic file (Excel Sheet or any other) to convert it, into an Online Web Calculator.")
+project13.photo.attach(io: File.open(Rails.root.join('app/assets/images/project13.jpg')), filename: 'project13.jpg', content_type: 'image/jpg')
+project13.save
+
+project14 = Project.new(name: "App development", description: "I will develop a web app for you", price: 1600, duration: "1 week", user_id: User.all.sample.id, details: "
+I will develop a stunning responsive web app from scratch for you. If you have a legacy web application or an exciting idea and you want a modern, responsive, scalable web application that is easily accessible from the web, then this gig is perfect for you!")
+project14.photo.attach(io: File.open(Rails.root.join('app/assets/images/project14.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
+project14.save
+
+project15 = Project.new(name: "Web component", description: "I will develop your lightning web components for salesforce", price: 500, duration: "2 days", user_id: User.all.sample.id, details: "
+Hi! I am Erick Sixto, a Salesforce and Frontend Developer. I am a certified Salesforce Platform Developer and Administrator. I specialize in building lightning web components for clients using my Web Development and Frontend Experience. Basic: Components that uses the SLDS styling and have very basic logic. Examples could be: A card that shows information about a record, a Form to Update a record. No Apex Classes
+
+Standard: Components that require a certain amount of logic or that needs custom styling. Basic Apex Classes Included
+
+Premium: A set of components that each one needs custom styling and complex logic to be executed. Complex Apex Classes Included. Reach out via message to send your requirements.")
+project15.photo.attach(io: File.open(Rails.root.join('app/assets/images/project15.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
+project15.save
+
+project16 = Project.new(name: "Dashboard Design", description: "I will do dashboard design, web app, and saas uiux design", price: 300, duration: "1 days", user_id: User.all.sample.id, details: "
+Are you looking for someone who can do dashboard design, web app, saas, or admin panel uiux design for you?
+Then you are in right place. I have 2+ years of experience in this industry. My target is not only to design colorful UI but also to ensure a user friendly and functional dashboard, web app, or any saas product that will help you to generate more revenue. Check out my previous work from Portfolio: https://flic.kr/ps/3VpLno")
+project16.photo.attach(io: File.open(Rails.root.join('app/assets/images/project16.jpg')), filename: 'project16.jpg', content_type: 'image/jpg')
+project16.save
+
+project17 = Project.new(name: "Laravel Web Developper", description: "I will be your laravel web developer", price: 2000, duration: "1 week", user_id: User.all.sample.id, details: "
+Hi there! Please Note! Contact us before placing the order to discuss your requirements. I am a professional php laravel web developers with the experties In Front End as well as Backend Development. I have strong skills in HTML, HTML5, CSS3, Bootstrap, JAVASCRIPT, Laravel, & PHP. We are offering php website, php laravel wevbsite, php mysql, web developer, php script.")
+project17.photo.attach(io: File.open(Rails.root.join('app/assets/images/project17.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
+project17.save
+
+project18 = Project.new(name: "Data Mining", description: "I will google maps web scraper with business data", price: 700, duration: "6 days", user_id: User.all.sample.id, details: "
+I Will Provide Any country Data as per Your Requirement. I am a professional google Maps web scraping having 5 years of experience in Internet Search, Google map Web Scraper, Business data, Web scraper, Web search. Here I will generate and provide leads or data from google maps using Google Map data scraping according to your category and location for growing your business.")
+project18.photo.attach(io: File.open(Rails.root.join('app/assets/images/project18.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
+project18.save
+
+project19 = Project.new(name: "Django Back-end", description: "I will develop your web backend using django and bootstrap", price: 1100, duration: "2 weeks", user_id: User.all.sample.id, details: "
+I will develop your web backend using and bootstrap. I will develop optimized APIs for your website. I am really good at third-party APIs integrations including Twilio, FedEx, google maps, Twitter, Dropbox, stripe. I can handle any type of Django website development including portfolio, business, fitness, NFT and marketplace, etc.")
+project19.photo.attach(io: File.open(Rails.root.join('app/assets/images/project19.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
+project19.save
+
+project20 = Project.new(name: "Interactive map", description: "I will create an interactive data visualization web map", price: 1000, duration: "6 days", user_id: User.all.sample.id, details: "
+I will create a custom interactive web map using JavaScript packages such as Leaflet, D3.js, and Mapbox GL JS. Depending on your data and preference, I can create a choropleth (colored polygons), point, line, flow, and/or heatmap. I will customize the colors, fonts, and symbols to suit your project. You will be able to pan and zoom to explore the mapped area. According to the project, I can add tool-tips/pop-ups with data and the colors and/or opacity of the features can change on mouse-over or click. In the Standard and Premium packages, I can make multiple layers for your data that can be turned on/off for different visualizations.")
+project20.photo.attach(io: File.open(Rails.root.join('app/assets/images/project20.jpg')), filename: 'project10.jpg', content_type: 'image/jpg')
+project20.save
