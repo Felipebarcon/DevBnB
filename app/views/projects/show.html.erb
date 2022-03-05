@@ -9,10 +9,10 @@
         </div>
 
         <div class="project-dev-data">
-          <h4>Developer : <strong><%= @project.user.username %></strong></h4>
+          <h4>Developer : <strong><%= @project.user.username.capitalize %></strong></h4>
           <p class="developer-city"><i class="fas fa-map-marker-alt"></i><%= @project.user.city %></p>
           <p><i class="fas fa-receipt"></i><%= @project.price %> $</p>
-          <p><i class="far fa-star"></i><%= @project.duration %></p>
+          <p><i class="fas fa-calendar"></i><%= @project.duration %></p>
 
           <%= link_to 'Book this project', new_project_order_path(@project), class: "btn btn-success" %>
 
