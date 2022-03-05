@@ -1,5 +1,4 @@
 class OrdersController < ApplicationController
-  skip_before_action :authenticate_user!
 
   def new
     @project = Project.find(params[:project_id])
@@ -7,7 +6,8 @@ class OrdersController < ApplicationController
   end
 
   def my_orders
-    @orders = Order.all
+    @user = current_user
+    @orders = @user.orders.order('created_at DESC')
   end
 
   def show
