@@ -13,3 +13,10 @@
 @import "pages/index";
 @import "projects/index";
 @import "orders/index";
+
+html, body{
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}
