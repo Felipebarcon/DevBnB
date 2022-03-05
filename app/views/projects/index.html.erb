@@ -8,9 +8,9 @@
           <div class="product-grid animate__animated animate__zoomIn">
               <div class="product-image">
               <% if project.photo.attached? %>
-                  <a href="#" class="image">
+                  <%= link_to project_path(project) do %>
                       <img class="img-1" src="<%= cl_image_path project.photo.key, height: 300, crop: :fill %>">
-                  </a>
+                  <% end %>
                   <% end %>
                   <ul class="product-links">
                       <li><%= link_to ('<i class="fa fa-eye"></i>').html_safe, project_path(project) %></li>
