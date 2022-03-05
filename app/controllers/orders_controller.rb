@@ -19,8 +19,9 @@ class OrdersController < ApplicationController
     @project = Project.find(params[:project_id])
     @order.project = @project
     @order.user = current_user
+    @order.status = "Not yet accepted"
     if @order.save
-      redirect_to projects_path
+      redirect_to my_orders_path
     else
       render :new
     end

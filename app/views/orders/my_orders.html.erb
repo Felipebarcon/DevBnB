@@ -12,10 +12,10 @@
             </div>
             <div class="card-body">
               <h3 class="order-project-name"><%= order.project.name %></h3>
-              <h3 class="status"><%= order.status %></h3>
               <p><%= order.project.description %></p>
               <div class="date">
-                <p><span>Starts at : </span><%= order.starts_at %></p>
+                <p><span class="bold">Status : </span><span class="status"><%= order.status %></span></h3>
+                <p><span class="bold">Starts at : </span><%= order.starts_at %></p>
               </div>
             </div>
           </div>

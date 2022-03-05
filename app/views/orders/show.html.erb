@@ -26,7 +26,7 @@
       <div class="my-order-data card text-dark bg-light mb-3 animate__animated animate__zoomIn">
         <div class="card-header"><h3><strong>Order info</strong></h3></div>
           <div class="card-body">
-            <p class="status"><strong>Order Status: </strong><%= @order.status %></p>
+            <p><strong>Order Status: </strong><span class="status"><%= @order.status %></span></p>
             <p class="comment"><strong>Your comment: </strong><%= @order.comment %></p>
             <p class="date"><strong>Order Start Date: </strong><%= @order.starts_at %></p>
           </div>
