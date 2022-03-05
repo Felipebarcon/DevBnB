@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :projects do
-    resources :orders, only: [:new, :create, :update]
+    resources :orders, only: [:new, :create, :update, :edit]
   end
 
   resources :orders, only: :show

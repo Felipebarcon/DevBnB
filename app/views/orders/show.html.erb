@@ -18,6 +18,7 @@
                 <h3 class="project-name"><%= @order.project.name %></h3>
                 <p style="text-align: justify;"><%= @order.project.details %></p>
             </div>
+            <%= link_to "Back to my orders", my_orders_path, class: "btn btn-primary c-white" %>
         </div>
     </div>
 
@@ -29,10 +30,8 @@
             <p class="comment"><strong>Your comment: </strong><%= @order.comment %></p>
             <p class="date"><strong>Order Start Date: </strong><%= @order.starts_at %></p>
           </div>
-          <%= link_to "Back to my Orders", my_orders_path, class: "btn btn-info" %>
-      </div>
-
+          <%= link_to "Edit order", edit_project_order_path(@order), class: "btn btn-info" %>
+        </div>
     </div>
-
   </div>
 </div>
