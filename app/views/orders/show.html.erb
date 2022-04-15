@@ -17,8 +17,8 @@
             <div class="product-content">
                 <h3 class="project-name"><%= @order.project.name %></h3>
                 <p style="text-align: justify;"><%= @order.project.details %></p>
+                <%= link_to "Back to my orders", my_orders_path, class: "btn btn-primary c-white" %>
             </div>
-            <%= link_to "Back to my orders", my_orders_path, class: "btn btn-primary c-white" %>
         </div>
     </div>
 
